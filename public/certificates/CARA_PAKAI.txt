@@ -1,0 +1,5 @@
+Taruh file gambar sertifikat Anda (.jpg, .png, atau .webp) di dalam folder ini.
+Contoh: public/certificates/sertifikat-uiux.jpg
+
+Lalu panggil di src/data/portfolioData.ts pada bagian certificates:
+imageUrl: '/certificates/sertifikat-uiux.jpg'
