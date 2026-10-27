@@ -68,7 +68,14 @@ export interface CertificateItem {
   title: string;
   issuer: string;
   date: string;
-  category: 'UI/UX & Design' | 'Web & Tech' | 'System & Data' | 'Competition / Event';
+  category:
+    | 'UI/UX & Design'
+    | 'Web & Tech'
+    | 'System & Data'
+    | 'Competition / Event'
+    | 'Database Administrator'
+    | 'Analyst & Data Visualization'
+    | (string & {});
   credentialId?: string;
   credentialUrl?: string;
   imageUrl?: string; // Simpan gambar di folder public/certificates/ lalu isi misal "/certificates/sertifikat-1.jpg"
@@ -212,7 +219,7 @@ export const portfolioData: PortfolioConfig = {
         platform: 'Instagram',
         handle: '@frdy.o_',
         url: 'https://instagram.com/frdy.o_',
-      },,
+      },
     ],
   },
 
